@@ -1,4 +1,5 @@
 # nbu-ci
+## Позже объясню =)
 
 		$data['currency_history'] = $this->CI->nbu_model->currencyHistory();
 		$selectDb = $this->CI->nbu_model->selectDb();
