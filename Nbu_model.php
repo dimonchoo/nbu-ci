@@ -55,7 +55,7 @@ class Nbu_model extends CI_Model implements NBU {
 			if (in_array($value->cc, $cur)) {
 				$currencies[$value->cc] = array(
 						'currency_ua_name' => $value->txt, 
-						'currency_num' => (float) preg_replace('/[^0-9.]/', '', mb_substr($value->rate, 0, 5) + 1.00), 
+						'currency_num' => (float) preg_replace('/[^0-9.]/', '', mb_substr($value->rate, 0, 5), ), 
 						'currency_full_num' => (float) preg_replace('/[^0-9.]/', '', $value->rate), 
 						'currency_name' => $value->cc,
 						'currency_date' => $value->exchangedate
