@@ -1,5 +1,12 @@
 # nbu-ci
 ## Позже объясню =)
+### База, таблица с названием "currency"
+
+id	int(11) unsigned Автоматическое приращение	 
+currency_date	varchar(10)	 
+currency_num_USD	varchar(10)	 
+currency_num_EURO	varchar(10)
+
 
 		$data['currency_history'] = $this->CI->nbu_model->currencyHistory();
 		$selectDb = $this->CI->nbu_model->selectDb();
